@@ -1,0 +1,24 @@
+<h1>Mongo Metrics</h1>
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Duration</th>
+    <th>Started At</th>
+    <th>Payload</th>
+  </thead>
+
+  <tbody>
+    <% @metrics.eadh do |metric| %>
+      <tr>
+        <td><%= metric.name %></td>
+        <td><%= metric.duration %></td>
+        <td><%= time_ago_in_words metric.started_at %> ago</td>
+        <td>
+          <% metric.payload.each do |k, v| %>
+
+            <p><b><%= k.humanize %></b><br /> <%= v %></p>
+          <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
