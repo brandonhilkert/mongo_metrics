@@ -1,6 +1,6 @@
 # MongoMetrics
 
-TODO: Write a gem description
+Mongo Metrics helps you keep track of the queries being triggered in a Rails application.
 
 ## Installation
 
@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add this line to your Rails routes file:
+
+    mount MongoMetrics::Engine, at: "/mongo_metrics"
+
+This will cause the dashboard to be available at the following address: http://[yourdomain]/mongo_metrics
 
 ## Contributing
 
