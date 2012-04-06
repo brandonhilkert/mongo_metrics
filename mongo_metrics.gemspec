@@ -5,7 +5,7 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Brandon Hilkert"]
   gem.email         = ["brandonhilkert@gmail.com"]
   gem.description   = %q{Mongo Metrics helps you keep track of the queries being triggered in a Rails application.}
-  gem.summary       = %q{Mongo Metrics query tracker for Rails}
+  gem.summary       = %q{Mongo Metrics is query tracker for Rails}
   gem.homepage      = "https://github.com/brandonhilkert/mongo_metrics"
 
   gem.files         = `git ls-files`.split($\)
