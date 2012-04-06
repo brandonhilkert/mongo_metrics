@@ -1,3 +1,4 @@
 MongoMetrics::Engine.routes.draw do
-  resources :mongo_metrics, only: [:index]
+  root to: "mongo_metrics/metrics#index"
+  resources :metrics, only: [:index]
 end
